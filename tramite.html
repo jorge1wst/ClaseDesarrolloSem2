@@ -9,10 +9,65 @@
 <body>
     <header>
         <div class="logo-section">
-            <span class="logo-text">gob<span class="logo-dot-pe">pe</span> </span>        
+            <span class="logo-text">gob<span class="logo-dot-pe">.pe</span> </span>        
         </div>
         <div class="app-tittle"> Mesa de Partes Virtual</div>
     </header>
+
+    <div class="container">
+        <section id="screen-status" class="screen">
+            <h2>Consultar Estado del Tramite</h2>           
+            <p class="screen-description">Al realizar un tramite en alguna oficina del Estado, puedes realizar el seguimiento y obtener el reporte actual de un tramite administrativo.</p>
+            
+            <div class="form-group">
+                <label for="doc-type">Seleccione una entidad para su procedimiento</label>
+                <select id="doc-type">
+                    <option value="">RENIEC-Registro Nacional de Identidad y Estado Civil</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+            <label for="doc-number">Numero de documento</label>
+            <input type="text" id ="doc-number" placeholder="Ingrese su numero de DNI.">            
+            </div>
+
+            <div class="flex-end">
+                <Button class="btn btn-primary">Consular el estado del tramite</Button>
+            </div>
+        </section>
+        
+        <section id="screen-validaion" class="screen active">
+            <h2>Validacion de datos del Ciudadano</h2>
+            <div class = "grid-2-cols">
+                <div class = "form-group">
+                    <label>DNI</label>
+                    <input type="text" placeholder="Ingrese su  DNI">
+                </div>
+                
+                <div class = "form-group">
+                    <label>Digito de Verificacion</label>
+                    <input type="text" placeholder="Ingrese el digito">
+                </div>
+                
+                <div class = "form-group">
+                    <label>Fecha de Emision del DNI</label>
+                    <input type="date">
+                </div>
+
+                <div class = "form-group">
+                    <label>Codigo Captcha</label>
+                    <div class = "flex-gap-10">
+                        <div class="captcha-box">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        &copy; 2026 Registro Nacional de Identificacion y Estado Civil -RENIEC </footer>
     <script src="tramite.js"></script>
     
 </body>
